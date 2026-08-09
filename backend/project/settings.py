@@ -58,7 +58,11 @@ INSTALLED_APPS = [
     "allauth.socialaccount",
     "allauth.socialaccount.providers.okta",
     "corsheaders",
+    "accounts"
 ]
+
+# カスタムユーザ
+AUTH_USER_MODEL = "accounts.User"
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",  # CORSは一番上が推奨されます
